@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Александр Шарабаров</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="header__name">Александр Шарабаров</h1>
+		<nav>
+			<a href="/" class="header__link">Обо мне</a>
+			<a href="#projects" class="header__link">Проекты</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="about">
+			<p class="about__paragraph">Привет. Меня зовут Александр, живу в <abbr title="Это в Краснодарском крае :)">Армавире</abbr> <small>(готов к переезду)</small>. В основном делаю фронтенд: верстаю, пишу JS-код - для браузера или на Ноде. Есть опыт работы с VueJS (много) и React (мало).</p>
+			<p class="about__paragraph">Люблю компонентный подход, работу с АПИ и отделение логики бэкенда от фронтенда.</p>
+			<p class="about__paragraph">Иногда пишу библиотеки в <a href="https://github.com/alcovegan" class="link" target="_blank" title="Гитхаб">опенсорс</a>.</p>
+
+			<p class="about__paragraph">Всегда стараюсь быть в курсе того, что происходит в области разработки: читаю статьи, слушаю подкасты (в частности <a href="https://exit.sc/?url=https%3A%2F%2Fitunes.apple.com%2Fru%2Fpodcast%2Fveb-standarty%2Fid1080500016" class="link" target="_blank" title="Подкаст Веб-стандартов">Веб-стандарты</a>, <a href="https://radio-t.com" class="link" target="_blank" title="Подкаст Радио-Т">Радио-Т</a>, <a href="http://frontendweekend.ml/" class="link" target="_blank" title="Подкаст Frontend Weekend">Frontend Weekend</a> и <a href="https://spb-frontend.ru/podcast/" class="link" target="_blank" title="Подкаст SPB Frontend Drinkast">SPB Frontend Drinkast</a>).</p>
+
+			<p class="about__paragraph">Помимо разработки люблю читать книги, слушать музыку и румынский артхаус. Иногда косвенно интересуюсь разработкой игр: слушаю подкаст <a href="https://kdicast.com/" class="link" target="_blank" title="Подкаст Как делают игры">Как делают игры</a> и читаю книги по геймдеву (например, <a href="https://www.amazon.com/Blood-Sweat-Pixels-Triumphant-Turbulent/dp/0062651234/" class="link" target="_blank" title="Blood, Sweat and Pixels">Blood, Sweat and Pixels</a> или серию книг <a href="https://bossfightbooks.com/" class="link" target="_blank" title="Boss Fight Books">Boss Fight Books</a>).</p>
+		</section>
+
+		<section class="contacts">
+			<h2 class="contacts__title">Контакты</h2>
+			<ul class="contacts__list">
+				<li class="contact">
+					<a href="tel:89298414224" class="link contact__link" title="Телефон">8 929 841-42-24</a>
+				</li>
+				<li class="contact">
+					<a href="mailto:alcovegan@gmail.com" class="link contact__link" title="Почта">alcovegan@gmail.com</a>
+				</li>
+				<li class="contact">
+					<a href="https://t.me/alcovegan" class="link contact__link" title="Телеграм" target="_blank">Телеграм</a>
+				</li>
+				<li class="contact">
+					<a href="https://vk.com/santoz" class="link contact__link" title="Вконтакте" target="_blank">ВК</a>
+				</li>
+				<li class="contact">
+					<a href="https://github.com/alcovegan" class="link contact__link" title="Гитхаб" target="_blank">Гитхаб</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="projects" id="projects">
+			<h2 class="projects__title">Проекты</h2>
+			<p>Некоторые проекты, которые я делал. Вы можете заметить здесь <i>некоторое</i> количество доставок кафе - да, так получилось :)</p>
+
+			<div class="project">
+				<div class="project__image">
+					<img src="images/projects/pepperonis.ru.jpg" alt="" class="project__img">
+				</div>
+
+				<div class="project__info">
+					<h3 class="project__name">Пиццерия Pepperoni's</h3>
+					<a href="http://pepperonis.ru" class="link project__link" target="_blank">pepperonis.ru</a>
+					<p class="project__desc">Доставка еды для пиццерии Pepperoni's в Армавире</p>
+
+					<strong>Что было сделано:</strong>
+
+					<ul class="project__works">
+						<li class="project__work">Дизайн и адаптивная вёрстка</li>
+						<li class="project__work">Разработка бэкенда и API (NodeJS, Express, Nodemailer)</li>
+						<li class="project__work">Разработка фронтенда и логики (Nunjucks + VueJS)</li>
+						<li class="project__work">Деплой на сервер (nginx + pm2)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="project__image">
+					<img src="images/projects/delivery.dolcevita.cafe.jpg" alt="" class="project__img">
+				</div>
+
+				<div class="project__info">
+					<h3 class="project__name">Кафе Dolce Vita</h3>
+					<a href="http://delivery.dolcevita.cafe" class="link project__link" target="_blank">delivery.dolcevita.cafe</a>
+					<p class="project__desc">Доставка еды для кофейни Dolce Vita. Сначала была запущена доставка еды, через время клиент попросил сделать конструктор пиццы. Ранее мной также была сделана <a href="http://dolcevita.cafe/" title="кафе DolceVita" class="link">главная страница</a> кафе - Wordpress + тема + немного кастомной верстки.</p>
+
+					<strong>Что было сделано:</strong>
+
+					<ul class="project__works">
+						<li class="project__work">Дизайн и вёрстка (использовался фреймворк Bulma)</li>
+						<li class="project__work">Разработка бэкенда и API (NodeJS, Express, Nodemailer)</li>
+						<li class="project__work">Разработка фронтенда и логики (VueJS)</li>
+						<li class="project__work">Разработка конструктора пиццы (VueJS)</li>
+						<li class="project__work">Деплой на сервер (nginx + pm2)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project">
+				<div class="project__image">
+					<img src="images/projects/californiacafe.jpg" alt="" class="project__img">
+				</div>
+
+				<div class="project__info">
+					<h3 class="project__name">Доставка для сети кафе</h3>
+					<a href="http://delivery.california-cafe.ru" class="link project__link" target="_blank">delivery.california-cafe.ru</a>
+					<p class="project__desc">Доставка еды для сети армавирских кафе. Стояла задача разработать доставку еды с раздельными корзинами для каждого заведения после неудачной попытки заказчика реализовать то же самое с адекватной стоимостью на Iiko Widget.</p>
+
+					<strong>Что было сделано:</strong>
+
+					<ul class="project__works">
+						<li class="project__work">Вёрстка (использовался фреймворк Bulma без особой кастомизации)</li>
+						<li class="project__work">Разработка бэкенда и API (NodeJS, Express, Nodemailer)</li>
+						<li class="project__work">Разработка фронтенда и логики (VueJS)</li>
+						<li class="project__work">Реализация отправки уведомлений о заказе в Telegram и SMS</li>
+						<li class="project__work">Деплой на сервер (nginx + pm2)</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+	</main>
+
+	<footer>
+		&#128584; 2017 – 2018
+	</footer>
+
+</body>
+</html>

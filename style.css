@@ -1,0 +1,168 @@
+*,::after,::before {
+	margin: 0;
+	padding: 0
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+::after,::before {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 20px;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+nav {
+	margin: 1rem 0 2rem;
+}
+
+main {
+	padding: 0;
+	max-width: 800px;
+}
+
+.link {
+	color: #222;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	transition: border .3s ease;
+}
+
+.link:hover {
+	border-bottom: 0px solid transparent;
+	transition: border .3s ease;
+}
+
+.about {
+	font-size: 1.125rem;
+	margin-bottom: 2rem;
+}
+
+.about__paragraph {
+	margin-bottom: 1rem;
+}
+
+.header__name {
+	font-size: 1.6rem;
+}
+
+.header__link {
+	color: #222;
+}
+
+.header__link:not(:last-child) {
+	margin-right: .5rem;
+}
+
+.contacts {
+	margin-bottom: 2rem;
+}
+
+.contacts__list {
+	margin: 1rem 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__item:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.contact {
+	padding: 2px 0;
+}
+
+.contact__link {
+	color: #222;
+}
+
+.projects__title {
+	margin-bottom: 1rem;
+}
+
+.project {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 1rem;
+	border: 1px solid #efefef;
+	border-radius: 2px;
+}
+
+.project:hover {
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.project__link {
+
+}
+
+.project__image {
+	margin: 0 auto 1rem;
+}
+
+.project__img {
+	max-width: 100%;
+	display: block;
+	border-radius: 5px;
+}
+
+.project__info {
+}
+
+.project__name {
+	/*margin-bottom: .5rem;*/
+}
+
+.project__desc {
+	margin: 1rem 0;
+}
+
+.project__works {
+	margin-top: .5rem;
+	margin-left: 1.25rem;
+}
+
+footer {
+	margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		padding: 60px;
+	}
+
+	.contacts__list {
+		flex-direction: row;
+	}
+
+	.project {
+		flex-direction: row;
+		padding: 1.5rem 1.225rem;
+	}
+
+	.project__image {
+		flex-basis: 50%;
+		margin: 0;
+	}
+
+	.project__info {
+		flex-basis: 50%;
+		padding: 0px 0 0 20px;
+	}
+
+}
